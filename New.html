@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Car Showcase</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>🚗 New Car Showcase</h1>
+
+    <div class="car-card" id="car-card">
+        <img src="https://via.placeholder.com/400x200?text=New+Car" alt="Car Image" id="car-image">
+        <h2 id="car-name">Tesla Model S</h2>
+        <p id="car-description">An electric car with outstanding performance and futuristic design.</p>
+        <ul id="car-features">
+            <li>Type: Sedan</li>
+            <li>Price: $80,000</li>
+        </ul>
+    </div>
+
+    <div class="form-container">
+        <h2>📝 Book Your Car</h2>
+        <form id="booking-form">
+            <input type="text" id="customer-name" placeholder="Your Name" required>
+            <input type="tel" id="customer-phone" placeholder="Phone Number" required>
+            <select id="selected-car">
+                <option value="Tesla Model S">Tesla Model S</option>
+                <option value="BMW i8">BMW i8</option>
+                <option value="Audi R8">Audi R8</option>
+                <option value="Ford st">Ford st</option>
+                <option value="MercedesBenz G63">MercedesBenz G63</option>
+                <option value="Bentley GT">Bentley GT</option>
+                <option value="Cadillac ESCALADElQ">Cadillac ESCALADElQ</option>
+                <option value="GMC Sierra">GMC Sierra</option>
+            </select>
+            <button type="submit">Submit Order 🚗</button>
+        </form>
+        <p id="form-result"></p>
+    </div>
+
+    <div class="loader" id="loader"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
