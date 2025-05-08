@@ -3,95 +3,72 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Used Cars - Your Dealership</title>
-  <link rel="stylesheet" href="../CSS/styles.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <title>Used Cars Showcase</title>
+  <link rel="stylesheet" href="Css/UsedCars.css" />
 </head>
 <body>
 
   <header>
-    <div class="container">
-      <h1>Used Cars Inventory</h1>
-      <p>Find your next car at the best price!</p>
-    </div>
+    <div class="logo">Helwan's Showroom</div>
+    <nav>
+      <a href="HomePage.html">Home</a>
+      <a href="NewCars.html">New Cars</a>
+      <a href="UsedCars.html">Used Cars</a>
+      <a href="AutoParts.html">Auto Parts</a>
+      <a href="AboutUs.html">About Us</a>
+      <a href="ContactUs.html">Contact Us</a>
+      <a href="Login.html" class="login">Log In</a>
+    </nav>
   </header>
 
-  <main class="container">
-    <aside class="filters">
-      <h2>Filter Cars</h2>
-      <form>
-        <label>Make:
-          <select>
-            <option>All</option>
-            <option>Toyota</option>
-            <option>Honda</option>
-            <option>Ford</option>
-          </select>
-        </label>
-        <label>Model:
-          <select>
-            <option>All</option>
-            <option>Corolla</option>
-            <option>Civic</option>
-            <option>F-150</option>
-          </select>
-        </label>
-        <label>Price Range:
-          <input type="range" min="0" max="50000" value="50000" />
-        </label>
-        <button type="submit">Apply Filters</button>
-      </form>
-    </aside>
+  <div class="container">
+    <h1> Used Cars Showcase</h1>
 
-    <section class="car-listings">
-      <!-- Car Card Example -->
+    <div class="car-list">
+      
       <div class="car-card">
-        <img src="https://via.placeholder.com/300x200?text=Toyota+Corolla" alt="Toyota Corolla">
-        <h3>2020 Toyota Corolla</h3>
-        <p class="price">$18,999</p>
-        <ul class="specs">
-          <li>Mileage: 45,000 km</li>
-          <li>Transmission: Automatic</li>
-          <li>Fuel: Petrol</li>
+        <img src="./Images/Cars/lamborghini.png" alt="Lamborghini centenario">
+        <h2>Lamborghini Centenario</h2>
+        <p>A limited-edition supercar with a powerful V12 engine and striking design.</p>
+        <ul class="car-features">
+          <li>Type: Supercar</li>
+          <a href="/UsedCars/Lamborghini.html" ><h3>More Info</h3></a>
         </ul>
-        <a href="#" class="btn">View Details</a>
-      </div>
+      </div> 
 
-      <!-- Repeat Car Cards -->
       <div class="car-card">
-        <img src="https://via.placeholder.com/300x200?text=Honda+Civic" alt="Honda Civic">
-        <h3>2019 Honda Civic</h3>
-        <p class="price">$16,499</p>
-        <ul class="specs">
-          <li>Mileage: 60,000 km</li>
-          <li>Transmission: Manual</li>
-          <li>Fuel: Hybrid</li>
+        <img src="./Images/Cars/mercedezBclass.png " alt ="Mercedes B-Class">
+        <h2>Mercedes-Benz B-class 2022</h2>
+        <p>The Mercedes-Benz B-Class is a stylish compact luxury MPV offering comfort, modern tech, and smooth driving dynamics.</p>
+        <ul class="car-features">
+          <li>Type: Hatchback</li>
+          <a href="/UsedCars/MercedezB.html" ><h3>More Info</h3></a>
         </ul>
-        <a href="#" class="btn">View Details</a>
       </div>
 
       <div class="car-card">
-        <img src="https://via.placeholder.com/300x200?text=Ford+F-150" alt="Ford F-150">
-        <h3>2018 Ford F-150</h3>
-        <p class="price">$24,999</p>
-        <ul class="specs">
-          <li>Mileage: 75,000 km</li>
-          <li>Transmission: Automatic</li>
-          <li>Fuel: Diesel</li>
+        <img src="./Images/Cars/maclaren.png" alt="McLaren W1">
+        <h2>McLaren W1</h2>
+        <p>A high-performance supercar with a lightweight design and powerful engine.</p>
+        <ul class="car-features">
+          <li>Type: Supercar</li>
+          <a href="/UsedCars/Maclaren.html" ><h3>More Info</h3></a>
         </ul>
-        <a href="#" class="btn">View Details</a>
       </div>
 
-      <!-- Add more cards as needed -->
+      <div class="car-card">
+        <img src="Images/Cars/Car_ (4).webp" alt="Porsche 911">
+        <h2>Porsche 911</h2>
+        <p>A high-performance sports car known for its precision engineering, iconic design, and thrilling driving experience.</p>
+        <ul class="car-features">
+          <li>Type: Sports Car</li>
+          <a href="/UsedCars/Porsche911.html" ><h3>More Info</h3></a>
+        </ul>
+      </div>
 
-    </section>
-  </main>
 
-  <footer>
-    <div class="container">
-      <p>&copy; 2025 Your Dealership Name. All rights reserved.</p>
     </div>
-  </footer>
+  </div>
 
 </body>
 </html>
