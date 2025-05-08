@@ -7,7 +7,6 @@
 
 body {
     background: #e0f7fa;
-    /* same light blue background */
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -27,7 +26,6 @@ body {
     text-align: center;
     margin-bottom: 20px;
     color: #00796b;
-    /* teal heading */
 }
 
 .input-group {
@@ -53,7 +51,6 @@ button {
     width: 100%;
     padding: 10px;
     background-color: #00796b;
-    /* teal button */
     color: white;
     font-size: 16px;
     border: none;
