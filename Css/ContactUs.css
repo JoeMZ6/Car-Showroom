@@ -4,8 +4,8 @@
     box-sizing: border-box;
 }
 body {
-    background-image: url('./Images/AboutUsImages/ContactUs.jpg');
-    background-size: 75% 100%; /* Width: 500px, Height: 300px */
+    background-image: url('../Images/AboutUsImages/ContactUs3.jpg');
+    background-size: 100% 100%; 
     background-position: center;
     background-repeat: no-repeat;
 }

@@ -1,0 +1,125 @@
+/* Reset some basic styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+header {
+  background: #0d47a1;
+  color: white;
+  padding: 2rem 0;
+  text-align: center;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 2rem 0;
+}
+
+.filters {
+  flex: 1;
+  min-width: 250px;
+  background: white;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.filters h2 {
+  margin-bottom: 1rem;
+}
+
+.filters form label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.filters select,
+.filters input[type="range"] {
+  width: 100%;
+}
+
+.filters button {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 10px;
+  background: #0d47a1;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.car-listings {
+  flex: 3;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.car-card {
+  background: white;
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.car-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.car-card h3 {
+  margin: 1rem 0 0.5rem;
+}
+
+.car-card .price {
+  font-weight: bold;
+  color: #e53935;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.car-card ul.specs {
+  list-style: none;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.car-card ul.specs li {
+  margin: 4px 0;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background: #43a047;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 2rem;
+}
