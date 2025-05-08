@@ -1,14 +1,15 @@
 body {
+    margin: 0;
+    padding: 0;
     font-family: Arial;
     background-color: #f4f4f4;
 }
 
 .container {
     max-width: 1200px;
-    argin: auto;
+    margin: auto;
     padding: 20px;
 }
-
 header {
     display: flex;
     justify-content: space-between;
@@ -16,7 +17,46 @@ header {
     margin-bottom: 20px;
 }
 
+.header1 {
+  background-color: #222;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+nav {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+nav a:hover {
+  color: #ffcc00;
+}  
+.login {
+  margin-left: 30px;
+  padding: 6px 15px;
+  background-color: white;
+  color: #222;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+}
 header h1 {
+    
     font-size: 2rem;
     color: #333;
 }
