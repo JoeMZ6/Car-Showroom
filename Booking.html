@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Booking</title>
+    <link rel="stylesheet" href="CSS/Booking.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">Helwan's Showroom</div>
+        <nav>
+            <a href="HomePage.html">Home</a>
+            <a href="NewCars.html">New Cars</a>
+            <a href="UsedCars.html">Used Cars</a>
+            <a href="AutoParts.html">Auto Parts</a>
+            <a href="AboutUs.html">About Us</a>
+            <a href="ContactUs.html">Contact Us</a>
+            <a href="Login.html" class="login">Log In</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="booking-form">
+            <h2>Book Your Car</h2>
+            <form action="pay.html">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" minlength="30" placeholder="Enter your name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phonenum">Mobile Number</label>
+                    <input type="tel" pattern="01[0-9]{9}" id="phonenum" name="phonenum"
+                        placeholder="Enter your mobile number" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="id">ID</label>
+                    <input type="text" pattern="[2-3]{1}[0-9]{13}" id="id" name="id" placeholder="Enter your ID"
+                        required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="car">Select Car</label>
+                    <select id="car" name="car" required>
+                        <option>Choose a car</option>
+                        <option value="tcorolla19">Toyota - Corolla 2019</option>
+                        <option value="tyaris20">Toyota - Yaris 2020</option>
+                        <option value="BMWx6">BMW - X6 2018</option>
+                        <option value="hyundai">Hyundai - Verna 2017</option>
+                        <option value="mercedes">Mercedes - Benz 2019</option>
+                        <option value="nissan">Nissan - Sunny 2020</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="pickup-date">Pickup Date</label>
+                    <input type="date" id="pickup-date" name="pickup-date" value="2024-12-28" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="dropoff-date">Drop-off Date</label>
+                    <input type="date" id="dropoff-date" name="dropoff-date" value="2025-01-06" required>
+                </div>
+
+
+                </div>
+                <button type="submit" class="submit-btn">Book Now</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>20230039</p>
+    </footer>
+</body>
+
+</html>
