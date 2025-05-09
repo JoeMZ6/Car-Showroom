@@ -1,8 +1,11 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #f9f9f9;
+  background-image: url('../Images/Home/background3.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
 }
 
 header {
@@ -48,38 +51,76 @@ nav a:hover {
   text-decoration: none;
 }
 
-.car-gallery {
+.hero {
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
   display: flex;
-  flex-wrap: wrap;
+  align-items: center;
   justify-content: center;
-  gap: 30px;
-  padding: 40px;
+  text-align: center;
+  color: white;
+  position: relative;
 }
 
-.car-card {
-  background-color: white;
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-  width: 300px;
-}
-
-.car-card img {
+.hero::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  height: 200px;
-  object-fit: cover;
+  height: 100%;
+  background: rgba(0, 0, 0, 0);
 }
 
-.car-details {
+.hero-text {
+  position: relative;
+  z-index: 1;
+}
+
+.hero-text h1 {
+  font-size: 48px;
+  margin-bottom: 15px;
+}
+
+.hero-text p {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.search-box {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.search-input {
+  padding: 12px;
+  border: none;
+  border-radius: 5px 0 0 5px;
+  width: 300px;
+  font-size: 16px;
+}
+
+.search-button {
+  padding: 12px 25px;
+  border: none;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.search-button:hover {
+  background-color: #333;
+}
+
+footer {
+  background-color: #222;
+  color: white;
+  text-align: center;
   padding: 15px;
-}
-
-.car-details h3 {
-  margin-top: 0;
-}
-
-.car-details p {
-  margin: 5px 0;
   font-size: 14px;
-  color: #333;
 }
