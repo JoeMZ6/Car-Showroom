@@ -9,7 +9,7 @@
 </head>
 
 <body>
-     <header class="header1">
+    <header class="header1">
         <div class="logo">Helwan's Showroom</div>
         <nav>
             <a href="HomePage.html">Home</a>
@@ -23,11 +23,6 @@
         </div>
     </header>
     <div class="container">
-        <header>
-            <h1>Auto Parts Store</h1>
-            <input type="text" id="searchBox" placeholder="Search Auto Part by Name" onkeyup="search()">
-        </header>
-
         <section id="autoPartsList">
             <div class="autoPart" data-name="Brake Pad">
                 <img src="Images/AutoParts/prake_pad.jpg" alt="Brake Pad">
@@ -35,11 +30,9 @@
                 <p>Price: $50</p>
                 <p>Status: Available</p>
                 <p>Year: 2023</p>
-                <p>Quantity: <span class="quantity">10</span></p>
-                <button onclick="updateAutoPartQuantity(this, -1)">-</button>
-                <button onclick="updateAutoPartQuantity(this, 1)">+</button>
+                <p>Available Quantity: <span class="quantity">10</span></p>
                 <div class="buy-section">
-                    <button onclick="buyAutoPart(this)">Buy</button>
+                    <button>Buy</button>
                 </div>
             </div>
             <div class="autoPart" data-name="Air Filter">
@@ -48,11 +41,9 @@
                 <p>Price: $25</p>
                 <p>Status: Available</p>
                 <p>Year: 2021</p>
-                <p>Quantity: <span class="quantity">20</span></p>
-                <button onclick="updateAutoPartQuantity(this, -1)">-</button>
-                <button onclick="updateAutoPartQuantity(this, 1)">+</button>
+                <p>Available Quantity: <span class="quantity">20</span></p>
                 <div class="buy-section">
-                    <button onclick="buyAutoPart(this)">Buy</button>
+                    <button>Buy</button>
                 </div>
             </div>
 
@@ -62,11 +53,9 @@
                 <p>Price: $100</p>
                 <p>Status: Available</p>
                 <p>Year: 2023</p>
-                <p>Quantity: <span class="quantity">8</span></p>
-                <button onclick="updateAutoPartQuantity(this, -1)">-</button>
-                <button onclick="updateAutoPartQuantity(this, 1)">+</button>
+                <p>Available Quantity: <span class="quantity">8</span></p>
                 <div class="buy-section">
-                    <button onclick="buyAutoPart(this)">Buy</button>
+                    <button>Buy</button>
                 </div>
             </div>
 
@@ -76,11 +65,9 @@
                 <p>Price: $10</p>
                 <p>Status: Available</p>
                 <p>Year: 2020</p>
-                <p>Quantity: <span class="quantity">50</span></p>
-                <button onclick="updateAutoPartQuantity(this, -1)">-</button>
-                <button onclick="updateAutoPartQuantity(this, 1)">+</button>
+                <p>Available Quantity: <span class="quantity">50</span></p>
                 <div class="buy-section">
-                    <button onclick="buyAutoPart(this)">Buy</button>
+                    <button>Buy</button>
                 </div>
             </div>
 
@@ -90,11 +77,9 @@
                 <p>Price: $120</p>
                 <p>Status: Available</p>
                 <p>Year: 2023</p>
-                <p>Quantity: <span class="quantity">15</span></p>
-                <button onclick="updateAutoPartQuantity(this, -1)">-</button>
-                <button onclick="updateAutoPartQuantity(this, 1)">+</button>
+                <p>Available Quantity: <span class="quantity">15</span></p>
                 <div class="buy-section">
-                    <button onclick="buyAutoPart(this)">Buy</button>
+                    <button>Buy</button>
                 </div>
             </div>
             <div class="autoPart" data-name="Headlight">
@@ -103,11 +88,9 @@
                 <p>Price: $70</p>
                 <p>Status: Out of Stock</p>
                 <p>Year: 2023</p>
-                <p>Quantity: <span class="quantity">0</span></p>
-                <button onclick="updateAutoPartQuantity(this, -1)">-</button>
-                <button onclick="updateAutoPartQuantity(this, 1)">+</button>
+                <p>Available Quantity: <span class="quantity">0</span></p>
                 <div class="buy-section">
-                    <button onclick="buyAutoPart(this)">Buy</button>
+                    <button>Buy</button>
                 </div>
             </div>
             <div class="autoPart" data-name="Radiator">
@@ -116,11 +99,9 @@
                 <p>Price: $250</p>
                 <p>Status: Available</p>
                 <p>Year: 2022</p>
-                <p>Quantity: <span class="quantity">5</span></p>
-                <button onclick="updateAutoPartQuantity(this, -1)">-</button>
-                <button onclick="updateAutoPartQuantity(this, 1)">+</button>
+                <p>Available Quantity: <span class="quantity">5</span></p>
                 <div class="buy-section">
-                    <button onclick="buyAutoPart(this)">Buy</button>
+                    <button>Buy</button>
                 </div>
             </div>
             <div class="autoPart" data-name="Clutch Disc">
@@ -129,11 +110,9 @@
                 <p>Price: $180</p>
                 <p>Status: Available</p>
                 <p>Year: 2023</p>
-                <p>Quantity: <span class="quantity">12</span></p>
-                <button onclick="updateAutoPartQuantity(this, -1)">-</button>
-                <button onclick="updateAutoPartQuantity(this, 1)">+</button>
+                <p>Available Quantity: <span class="quantity">12</span></p>
                 <div class="buy-section">
-                    <button onclick="buyAutoPart(this)">Buy</button>
+                    <button>Buy</button>
                 </div>
             </div>
             <div class="autoPart" data-name="Fuel Pump">
@@ -142,11 +121,9 @@
                 <p>Price: $200</p>
                 <p>Status: Available</p>
                 <p>Year: 2023</p>
-                <p>Quantity: <span class="quantity">10</span></p>
-                <button onclick="updateAutoPartQuantity(this, -1)">-</button>
-                <button onclick="updateAutoPartQuantity(this, 1)">+</button>
+                <p>Available Quantity: <span class="quantity">10</span></p>
                 <div class="buy-section">
-                    <button onclick="buyAutoPart(this)">Buy</button>
+                    <button>Buy</button>
                 </div>
             </div>
             <div class="autoPart" data-name="Exhaust System">
@@ -155,11 +132,9 @@
                 <p>Price: $350</p>
                 <p>Status: Available</p>
                 <p>Year: 2021</p>
-                <p>Quantity: <span class="quantity">5</span></p>
-                <button onclick="updateAutoPartQuantity(this, -1)">-</button>
-                <button onclick="updateAutoPartQuantity(this, 1)">+</button>
+                <p>Available Quantity: <span class="quantity">5</span></p>
                 <div class="buy-section">
-                    <button onclick="buyAutoPart(this)">Buy</button>
+                    <button>Buy</button>
                 </div>
             </div>
             <div class="autoPart" data-name="Alternator">
@@ -168,11 +143,9 @@
                 <p>Price: $220</p>
                 <p>Status: Available</p>
                 <p>Year: 2023</p>
-                <p>Quantity: <span class="quantity">8</span></p>
-                <button onclick="updateAutoPartQuantity(this, -1)">-</button>
-                <button onclick="updateAutoPartQuantity(this, 1)">+</button>
+                <p>Available Quantity: <span class="quantity">8</span></p>
                 <div class="buy-section">
-                    <button onclick="buyAutoPart(this)">Buy</button>
+                    <button>Buy</button>
                 </div>
             </div>
             <div class="autoPart" data-name="Windshield Wiper">
@@ -181,11 +154,9 @@
                 <p>Price: $18</p>
                 <p>Status: Available</p>
                 <p>Year: 2022</p>
-                <p>Quantity: <span class="quantity">25</span></p>
-                <button onclick="updateAutoPartQuantity(this, -1)">-</button>
-                <button onclick="updateAutoPartQuantity(this, 1)">+</button>
+                <p>Available Quantity: <span class="quantity">25</span></p>
                 <div class="buy-section">
-                    <button onclick="buyAutoPart(this)">Buy</button>
+                    <button>Buy</button>
                 </div>
             </div>
         </section>
