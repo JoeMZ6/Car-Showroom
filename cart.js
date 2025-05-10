@@ -154,7 +154,7 @@ function removeFromCart(carId) {
 }
 
 function proceedToCheckout() {
-    alert("سيتم نقلك إلى صفحة الدفع");
+    alert("Proceeding to checkout...");
 }
 
 function showToast() {
@@ -172,7 +172,7 @@ function showToast() {
         display: none;
         transition: opacity 0.3s;
     `;
-    toast.textContent = "تمت الإضافة إلى العربة!";
+    toast.textContent = "Item added to cart!";
     document.body.appendChild(toast);
 
     toast.style.display = 'block';
