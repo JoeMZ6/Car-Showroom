@@ -16,6 +16,7 @@
             <a href="/AutoParts.html">Auto Parts</a>
             <a href="/AboutUs.html">About Us</a>
             <a href="/ContactUs.html">Contact Us</a>
+            <a href="/cart.html">Cart</a>   
             <a href="/Login.html" class="login">Log In</a>
         </nav>
     </header>
@@ -46,9 +47,10 @@
         <form id="booking-form">
             <input type="text" id="customer-name" placeholder="Your Name" required>
             <input type="tel" id="customer-phone" placeholder="Phone Number" required>
-            <button type="submit">Submit Order 🚗</button>
+            <button  onclick="addToCart(14)">Add to Cart</button>
         </form>
     </div>
+    <script src="/cart.js"></script>
 
 </body>
 </html>

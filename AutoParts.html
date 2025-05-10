@@ -15,10 +15,10 @@
             <a href="HomePage.html">Home</a>
             <a href="NewCars.html">New Cars</a>
             <a href="UsedCars.html">Used Cars</a>
-            <a href="Booking.html">Book Car</a>
             <a href="AutoParts.html">Auto Parts</a>
             <a href="AboutUs.html">About Us</a>
             <a href="ContactUs.html">Contact Us</a>
+            <a href="cart.html">cart</a>
             <a href="Login.html" class="login">Log In</a>
         </nav>
         </div>
@@ -33,7 +33,7 @@
                 <p>Year: 2023</p>
                 <p>Available Quantity: <span class="quantity">10</span></p>
                 <div class="buy-section">
-                    <button>Buy</button>
+                    <button onclick="addToCart(1)">Add to Cart</button>
                 </div>
             </div>
             <div class="autoPart" data-name="Air Filter">
@@ -44,7 +44,7 @@
                 <p>Year: 2021</p>
                 <p>Available Quantity: <span class="quantity">20</span></p>
                 <div class="buy-section">
-                    <button>Buy</button>
+                    <button onclick="addToCart(2)">Add to Cart</button>
                 </div>
             </div>
 
@@ -56,7 +56,7 @@
                 <p>Year: 2023</p>
                 <p>Available Quantity: <span class="quantity">8</span></p>
                 <div class="buy-section">
-                    <button>Buy</button>
+                    <button onclick="addToCart(3)">Add to Cart</button>
                 </div>
             </div>
 
@@ -68,7 +68,7 @@
                 <p>Year: 2020</p>
                 <p>Available Quantity: <span class="quantity">50</span></p>
                 <div class="buy-section">
-                    <button>Buy</button>
+                    <button onclick="addToCart(4)">Add to Cart</button>
                 </div>
             </div>
 
@@ -80,7 +80,7 @@
                 <p>Year: 2023</p>
                 <p>Available Quantity: <span class="quantity">15</span></p>
                 <div class="buy-section">
-                    <button>Buy</button>
+                    <button onclick="addToCart(5)">Add to Cart</button>
                 </div>
             </div>
             <div class="autoPart" data-name="Headlight">
@@ -91,7 +91,7 @@
                 <p>Year: 2023</p>
                 <p>Available Quantity: <span class="quantity">0</span></p>
                 <div class="buy-section">
-                    <button>Buy</button>
+                    <button onclick="addToCart(6)">Add to Cart</button>
                 </div>
             </div>
             <div class="autoPart" data-name="Radiator">
@@ -102,7 +102,7 @@
                 <p>Year: 2022</p>
                 <p>Available Quantity: <span class="quantity">5</span></p>
                 <div class="buy-section">
-                    <button>Buy</button>
+                    <button onclick="addToCart(7)">Add to Cart</button>
                 </div>
             </div>
             <div class="autoPart" data-name="Clutch Disc">
@@ -113,7 +113,7 @@
                 <p>Year: 2023</p>
                 <p>Available Quantity: <span class="quantity">12</span></p>
                 <div class="buy-section">
-                    <button>Buy</button>
+                    <button onclick="addToCart(8)">Add to Cart</button>
                 </div>
             </div>
             <div class="autoPart" data-name="Fuel Pump">
@@ -124,7 +124,7 @@
                 <p>Year: 2023</p>
                 <p>Available Quantity: <span class="quantity">10</span></p>
                 <div class="buy-section">
-                    <button>Buy</button>
+                    <button onclick="addToCart(9)">Add to Cart</button>
                 </div>
             </div>
             <div class="autoPart" data-name="Exhaust System">
@@ -135,7 +135,7 @@
                 <p>Year: 2021</p>
                 <p>Available Quantity: <span class="quantity">5</span></p>
                 <div class="buy-section">
-                    <button>Buy</button>
+                    <button onclick="addToCart(10)">Add to Cart</button>
                 </div>
             </div>
             <div class="autoPart" data-name="Alternator">
@@ -146,7 +146,7 @@
                 <p>Year: 2023</p>
                 <p>Available Quantity: <span class="quantity">8</span></p>
                 <div class="buy-section">
-                    <button>Buy</button>
+                    <button onclick="addToCart(11)">Add to Cart</button>
                 </div>
             </div>
             <div class="autoPart" data-name="Windshield Wiper">
@@ -157,11 +157,12 @@
                 <p>Year: 2022</p>
                 <p>Available Quantity: <span class="quantity">25</span></p>
                 <div class="buy-section">
-                    <button>Buy</button>
+                    <button onclick="addToCart(12)">Add to Cart</button>
                 </div>
             </div>
         </section>
     </div>
+    <script src ="cart.js"></script>
 </body>
 
 </html>

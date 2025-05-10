@@ -1,4 +1,3 @@
-// Data for available cars (includes car parts too)
 const availableCars = [
     { id: 1, name: "Brake Pad", price: 50, image: "Images/AutoParts/prake_pad.jpg" },
     { id: 2, name: "Air Filter", price: 25, image: "Images/AutoParts/air_filter.jpg" },
@@ -11,19 +10,28 @@ const availableCars = [
     { id: 9, name: "Fuel Pump", price: 200, image: "Images/AutoParts/fuel_pump.jpg" },
     { id: 10, name: "Exhaust System", price: 350, image: "Images/AutoParts/exhaust_system.jpg" },
     { id: 11, name: "Alternator", price: 220, image: "Images/AutoParts/alternator.jpg" },
-    { id: 12, name: "Windshield Wiper", price: 18, image: "Images/AutoParts/windshield_wiper.jpg" }
+    { id: 12, name: "Windshield Wiper", price: 18, image: "Images/AutoParts/windshield_wiper.jpg" },
+    { id: 13, name: "McLaren W1", price: 30000000, image: "/Images/Cars/maclaren.png" },
+    { id: 14, name: "Mercedes-Benz B-Class 2022", price: 1500000, image: "/Images/Cars/mercedezBclass.png " },
+    { id: 15, name: "Porsche 911", price: 3000000, image: "/Images/Cars/Car_ (4).webp" },
+    { id: 17, name: "Lamborghini Centenario", price: 45000000, image: "./Images/Cars/lamborghini.png" },
+    { id: 18, name: "Ferarri-296-GTB", price: 6500000, image: "./Images/Cars/Ferarri 296 gtb.png" },
+    { id: 19, name: "BMW I8", price: 7000000, image: "./Images/cars/BMW I8.png" },
+    { id: 20, name: "AUDI R8", price: 8500000, image:"./Images/Cars/audi r8.png" },
+    { id: 21, name: "Bently GT", price: 7500000, image: "./Images/Cars/Bently GT.png" },
+    { id: 22, name: "Mercedez Benz G63", price: 13000000, image: "./Images/Cars/mercedez g63.png" },
+    { id: 24, name: "GMC Sierra", price: 6000000, image: "./Images/Cars/GMC Sierra.png" },
+    { id: 25, name: "Cadillac ESCALADE IQ", price: 6900000, image: "./Images/Cars/Cadillac ESCALADElQ.png"},
+
 ];
 
-// Shopping Cart Array
 let shoppingCart = [];
 
-// Load cart on page load
 document.addEventListener('DOMContentLoaded', () => {
     loadCart();
     renderCart();
 });
 
-// Load cart from localStorage
 function loadCart() {
     const savedCart = localStorage.getItem('carShoppingCart');
     if (savedCart) {
@@ -31,12 +39,10 @@ function loadCart() {
     }
 }
 
-// Save cart to localStorage
 function saveCart() {
     localStorage.setItem('carShoppingCart', JSON.stringify(shoppingCart));
 }
 
-// Render cart UI
 function renderCart() {
     const cartContainer = document.getElementById('cartContainer');
 
@@ -51,12 +57,12 @@ function renderCart() {
         <table class="cart-items">
             <thead>
                 <tr>
-                    <th>الصورة</th>
-                    <th>المنتج</th>
-                    <th>السعر</th>
-                    <th>الكمية</th>
-                    <th>المجموع</th>
-                    <th>الحذف</th>
+                    <th>Image</th>
+                    <th>Product</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Total</th>
+                    <th>Delete</th>
                 </tr>
             </thead>
             <tbody>
@@ -90,35 +96,32 @@ function renderCart() {
         </table>
         <div class="cart-summary">
             <div class="cart-total">
-                <span>المجموع الكلي:</span>
+                <span>TOTAL:</span>
                 <span>$${total}</span>
             </div>
-            <button class="checkout-btn" onclick="proceedToCheckout()">إتمام الشراء</button>
+            <button class="checkout-btn" onclick="proceedToCheckout()">CHECK OUT</button>
         </div>
     `;
 
     cartContainer.innerHTML = cartHTML;
 }
 
-// Empty cart UI
 function renderEmptyCart() {
     const cartContainer = document.getElementById('cartContainer');
     cartContainer.innerHTML = `
         <div class="empty-cart">
             <div class="empty-cart-icon">🛒</div>
-            <h2>عربة التسوق الخاصة بك فارغة</h2>
-            <p>لم تقم بإضافة أي منتجات بعد</p>
-            <button class="continue-shopping" onclick="window.location.href='AutoParts.html'">مواصلة التسوق</button>
+            <h2>EMPTY CART</h2>
+            <p>You Haven't Added Any Product Yet<p>
+            <button class="continue-shopping" onclick="window.location.href='AutoParts.html'">Keep Shopping</button>
         </div>
     `;
 }
 
-// Format price
 function formatPrice(price) {
     return price.toLocaleString('ar-SA');
 }
 
-// Add to cart
 function addToCart(carId, quantity = 1) {
     const existingItem = shoppingCart.find(item => item.id === carId);
     if (existingItem) {
@@ -131,7 +134,6 @@ function addToCart(carId, quantity = 1) {
     showToast();
 }
 
-// Update quantity
 function updateQuantity(carId, qty) {
     if (qty < 1) {
         removeFromCart(carId);
@@ -145,19 +147,16 @@ function updateQuantity(carId, qty) {
     }
 }
 
-// Remove from cart
 function removeFromCart(carId) {
     shoppingCart = shoppingCart.filter(item => item.id !== carId);
     saveCart();
     renderCart();
 }
 
-// Go to checkout
 function proceedToCheckout() {
     alert("سيتم نقلك إلى صفحة الدفع");
 }
 
-// Toast Notification
 function showToast() {
     const toast = document.createElement('div');
     toast.id = 'toast';
@@ -183,7 +182,6 @@ function showToast() {
     }, 2000);
 }
 
-// Make functions global
 window.addToCart = addToCart;
 window.updateQuantity = updateQuantity;
 window.removeFromCart = removeFromCart;
