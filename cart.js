@@ -1,16 +1,16 @@
 const availableCars = [
-    { id: 1, name: "Brake Pad", price: 50, image: "Images/AutoParts/prake_pad.jpg" },
-    { id: 2, name: "Air Filter", price: 25, image: "Images/AutoParts/air_filter.jpg" },
-    { id: 3, name: "Battery", price: 100, image: "Images/AutoParts/battery.jpg" },
-    { id: 4, name: "Spark Plug", price: 10, image: "Images/AutoParts/spark_plug.jpg" },
-    { id: 5, name: "Tire", price: 120, image: "Images/AutoParts/tire.jpg" },
-    { id: 6, name: "Headlight", price: 70, image: "Images/AutoParts/headlight.jpg" },
-    { id: 7, name: "Radiator", price: 250, image: "Images/AutoParts/radiator.jpg" },
-    { id: 8, name: "Clutch Disc", price: 180, image: "Images/AutoParts/clutch_disc.jpg" },
-    { id: 9, name: "Fuel Pump", price: 200, image: "Images/AutoParts/fuel_pump.jpg" },
-    { id: 10, name: "Exhaust System", price: 350, image: "Images/AutoParts/exhaust_system.jpg" },
-    { id: 11, name: "Alternator", price: 220, image: "Images/AutoParts/alternator.jpg" },
-    { id: 12, name: "Windshield Wiper", price: 18, image: "Images/AutoParts/windshield_wiper.jpg" },
+    { id: 1, name: "Brake Pad", price: 2500, image: "Images/AutoParts/prake_pad.jpg" },
+    { id: 2, name: "Air Filter", price: 1250, image: "Images/AutoParts/air_filter.jpg" },
+    { id: 3, name: "Battery", price: 5000, image: "Images/AutoParts/battery.jpg" },
+    { id: 4, name: "Spark Plug", price: 500, image: "Images/AutoParts/spark_plug.jpg" },
+    { id: 5, name: "Tire", price: 6000, image: "Images/AutoParts/tire.jpg" },
+    { id: 6, name: "Headlight", price: 3500, image: "Images/AutoParts/headlight.jpg" },
+    { id: 7, name: "Radiator", price: 12500, image: "Images/AutoParts/radiator.jpg" },
+    { id: 8, name: "Clutch Disc", price: 9000, image: "Images/AutoParts/clutch_disc.jpg" },
+    { id: 9, name: "Fuel Pump", price: 10000, image: "Images/AutoParts/fuel_pump.jpg" },
+    { id: 10, name: "Exhaust System", price: 17500, image: "Images/AutoParts/exhaust_system.jpg" },
+    { id: 11, name: "Alternator", price: 11000, image: "Images/AutoParts/alternator.jpg" },
+    { id: 12, name: "Windshield Wiper", price: 900, image: "Images/AutoParts/windshield_wiper.jpg" },
     { id: 13, name: "McLaren W1", price: 30000000, image: "/Images/Cars/maclaren.png" },
     { id: 14, name: "Mercedes-Benz B-Class 2022", price: 1500000, image: "/Images/Cars/mercedezBclass.png " },
     { id: 15, name: "Porsche 911", price: 3000000, image: "/Images/Cars/Car_ (4).webp" },
@@ -77,7 +77,7 @@ function renderCart() {
             <tr>
                 <td><img src="${car.image}" width="100" /></td>
                 <td>${car.name}</td>
-                <td>$${car.price}</td>
+                <td>EGP${car.price}</td>
                 <td>
                     <div class="quantity-control">
                         <button class="quantity-btn" onclick="updateQuantity(${item.id}, ${item.quantity - 1})">-</button>
@@ -85,7 +85,7 @@ function renderCart() {
                         <button class="quantity-btn" onclick="updateQuantity(${item.id}, ${item.quantity + 1})">+</button>
                     </div>
                 </td>
-                <td>$${itemTotal}</td>
+                <td>EGP${itemTotal}</td>
                 <td><button class="remove-btn" onclick="removeFromCart(${item.id})">×</button></td>
             </tr>
         `;
@@ -97,7 +97,7 @@ function renderCart() {
         <div class="cart-summary">
             <div class="cart-total">
                 <span>TOTAL:</span>
-                <span>$${total}</span>
+                <span>EGP${total}</span>
             </div>
             <button class="checkout-btn" onclick="proceedToCheckout()">CHECK OUT</button>
         </div>

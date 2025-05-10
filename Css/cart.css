@@ -75,7 +75,6 @@ footer {
     color: #7f8c8d;
 }
 
-/* تنسيقات عربة التسوق */
 .cart-container {
     background: #fff;
     border-radius: 10px;
@@ -119,7 +118,6 @@ footer {
     background-color: #2980b9;
 }
 
-/* تنسيقات عندما تحتوي العربة على منتجات */
 .cart-items {
     width: 100%;
     border-collapse: collapse;
