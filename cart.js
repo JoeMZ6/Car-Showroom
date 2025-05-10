@@ -113,7 +113,7 @@ function renderEmptyCart() {
             <div class="empty-cart-icon">🛒</div>
             <h2>EMPTY CART</h2>
             <p>You Haven't Added Any Product Yet<p>
-            <button class="continue-shopping" onclick="window.location.href='AutoParts.html'">Keep Shopping</button>
+            <button class="continue-shopping" onclick="window.location.href='UsedCars.html'">Keep Shopping</button>
         </div>
     `;
 }
