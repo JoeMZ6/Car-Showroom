@@ -69,19 +69,7 @@ function startAutoChange() {
     }, 3000); // change every 5 seconds
 }
 
-// Form handling
-document.getElementById('booking-form').addEventListener('submit', function(e) {
-    e.preventDefault();
 
-    const name = document.getElementById('customer-name').value;
-    const phone = document.getElementById('customer-phone').value;
-    const selectedCar = document.getElementById('selected-car').value;
-
-    document.getElementById('form-result').textContent = `Thank you, ${name}! We will contact you soon about your ${selectedCar}. 📞`;
-    
-    // Clear the form
-    this.reset();
-});
 
 // Start carousel
 startAutoChange();
