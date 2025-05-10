@@ -2,16 +2,64 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', sans-serif;
 }
 
 
 body {
-    background: #e0f7fa;
-    height: 100vh;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #222;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav a:hover {
+    color: #ffcc00;
+}
+
+.login {
+    margin-left: 30px;
+    padding: 6px 15px;
+    background-color: white;
+    color: #222;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.main-content {
+    flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 40px 20px;
 }
 
 .login-container {
